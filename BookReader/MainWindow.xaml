@@ -14,14 +14,17 @@
         <ListView  Name="Game_List" FontSize="20" Margin="44,115,52,10">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Name" Width="235" DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Header="Genre" Width="235" DisplayMemberBinding="{Binding Genre}"/>
-                    <GridViewColumn Header="Price" Width="235" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Name" Width="140" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Date" Width="140" DisplayMemberBinding="{Binding Date}"/>
+                    <GridViewColumn Header="Developer" Width="140" DisplayMemberBinding="{Binding Dev}"/>
+                    <GridViewColumn Header="Genre" Width="140" DisplayMemberBinding="{Binding Genre}"/>
+                    <GridViewColumn Header="Price" Width="140" DisplayMemberBinding="{Binding Price}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <ComboBox Name="Price_Combo_Box" HorizontalAlignment="Left" Margin="464,68,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Name="Search_Button" Content="Search" HorizontalAlignment="Left" Margin="640,18,0,0" VerticalAlignment="Top" Height="32" Width="96" Click="Button_Click"/>
+        <Button x:Name="Filter" Content="Download Table" HorizontalAlignment="Left" Margin="640,58,0,0" VerticalAlignment="Top" Height="32" Width="96" Click="Filter_Click"/>
 
     </Grid>
 </Window>
