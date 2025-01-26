@@ -8,17 +8,17 @@
         Title="MainWindow" Height="450" Width="800" Background="white">
     <Grid>
         <Rectangle HorizontalAlignment="Center"   Height="100" Stroke="Black" Fill="#FFF" VerticalAlignment="Top" Width="800"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" Background="#FFF" FontSize="50" Text="GameChart" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" Background="#FFF" FontSize="50" Text="BookChart" VerticalAlignment="Top"/>
         <ComboBox Name="Genre_Combo_Box" HorizontalAlignment="Left" Margin="301,68,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
         <TextBox Name="Search_Box" HorizontalAlignment="Left" Margin="301,18,0,0" TextWrapping="Wrap" FontSize="23" Text="" VerticalAlignment="Top" Width="283" Height="32" TextChanged="TextBox_TextChanged"/>
         <ListView  Name="Game_List" FontSize="20" Margin="44,115,52,10">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="140" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Author" Width="140" DisplayMemberBinding="{Binding Author}"/>
                     <GridViewColumn Header="Date" Width="140" DisplayMemberBinding="{Binding Date}"/>
-                    <GridViewColumn Header="Developer" Width="140" DisplayMemberBinding="{Binding Dev}"/>
+                    <GridViewColumn Header="Sales" Width="140" DisplayMemberBinding="{Binding Sales}"/>
                     <GridViewColumn Header="Genre" Width="140" DisplayMemberBinding="{Binding Genre}"/>
-                    <GridViewColumn Header="Price" Width="140" DisplayMemberBinding="{Binding Price}"/>
                 </GridView>
             </ListView.View>
         </ListView>
