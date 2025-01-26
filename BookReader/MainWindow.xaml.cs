@@ -227,7 +227,7 @@ namespace BookReader
                 }
             }
 
-            MessageBox.Show("Filtered games list has been saved to 'FilteredGames.csv'.", "Export Complete");
+            MessageBox.Show("Export Complete");
         }
     }
 }
